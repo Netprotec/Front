@@ -4,6 +4,7 @@ const app = express();
 // Sirve archivos estáticos (HTML, JS)
 app.use(express.static('public'));
 
-app.listen(4000, '0.0.0.0', () => {
-  console.log('Frontend escuchando en http://localhost:4000');
+// SOLO escucha en localhost
+app.listen(4000, '127.0.0.1', () => {
+  console.log('Frontend LOCAL en http://localhost:4000');
 });
