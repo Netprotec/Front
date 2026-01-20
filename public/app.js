@@ -1,7 +1,7 @@
 function enviar() {
   const nombre = document.getElementById('nombre').value;
 
-  fetch('http://localhost:3000/productos', {
+  fetch('http://154.38.163.221:3000/productos', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
